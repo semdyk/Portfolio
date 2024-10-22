@@ -3,6 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const images = gallery.querySelectorAll("img");
   const leftArrow = document.querySelector(".arrow.left");
   const rightArrow = document.querySelector(".arrow.right");
+  const navPicture = document.getElementById("logo");
+
   let currentIndex = 0;
 
   function updateGallery() {
@@ -33,5 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
   const modal = document.getElementById("image-modal");
   modal.addEventListener("click", function () {
     modal.classList.remove("show");
+  });
+
+  navPicture.setAttribute("draggable", false);
+  navPicture.addEventListener("click", () => {
+    window.location.href = "https://semdyk.xyz/";
   });
 });
