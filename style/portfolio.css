@@ -126,6 +126,7 @@ body {
 
   .content p {
     font-size: 16px;
+    max-width: 300px;
   }
 
   .gallery img {
