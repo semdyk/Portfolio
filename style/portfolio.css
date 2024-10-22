@@ -34,6 +34,12 @@
   display: none;
 }
 
+.gallery img:hover {
+  cursor: pointer;
+  scale: 1.05;
+  transition: transform 0.3s ease;
+}
+
 .gallery img.active {
   display: block;
 }
