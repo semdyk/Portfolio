@@ -20,7 +20,6 @@
 .gallery {
   flex: 1;
   display: grid;
-  max-height: 280px;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 10px;
   padding-right: 20px; /* Padding to space images from right edge */
@@ -28,7 +27,7 @@
 
 .gallery img {
   width: 200px;
-  height: 300px; /* Adjusted height for better aspect ratio */
+  height: 150px; /* Adjusted height for better aspect ratio */
   object-fit: cover;
   border-radius: 12px; /* Match the card border styling */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for image depth */
