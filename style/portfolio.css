@@ -29,7 +29,7 @@
 }
 
 .gallery img {
-  width: 100%;
+  width: 250px;
   display: none; /* Hide all images initially */
 }
 
