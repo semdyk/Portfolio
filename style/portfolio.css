@@ -1,25 +1,27 @@
 .dashboard {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
   gap: 20px;
   width: 100%;
   padding: 20px;
   border-radius: 12px; /* Rounded corners for cleaner design */
   background-color: #1f1f1f; /* Match background to image */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Add subtle shadow */
+  flex-direction: row; /* Ensure items are in a row */
 }
 
 .content {
   flex: 1;
-  max-width: 40%; /* Reduce size for more space on the right */
-  text-align: left;
-  padding-left: 40px; /* Ensure content aligns with left margin */
+  max-width: 45%; /* Adjust width for better space usage */
+  text-align: center; /* Center text */
+  padding-left: 20px; /* Adjust padding as needed */
 }
 
 .gallery-container {
-  position: relative;
-  max-width: 100%; /* Adjust based on your page layout */
+  flex: 1;
+  max-width: 45%; /* Adjust width to align with content */
+  text-align: center; /* Center gallery images */
 }
 
 .gallery {
