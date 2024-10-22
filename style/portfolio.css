@@ -5,6 +5,7 @@ body {
 .dashboard {
   display: flex;
   justify-content: center;
+  overflow: hidden;
   align-items: center;
   gap: 20px;
   width: 100%;
