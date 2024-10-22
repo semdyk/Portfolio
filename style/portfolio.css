@@ -19,8 +19,8 @@
 
 .gallery {
   flex: 1;
-  height: 300px;
   display: grid;
+  max-height: 280px;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 10px;
   padding-right: 20px; /* Padding to space images from right edge */
