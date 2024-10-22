@@ -60,14 +60,14 @@ nav ul li a.active {
   display: inline-block;
   margin-top: 10px;
   font-size: 24px; /* Adjust size of the icon */
-  color: #333; /* Default color of the icon */
+  color: #ffffff; /* Default color of the icon */
   text-decoration: none;
   transition: color 0.3s ease; /* Smooth transition on hover */
 }
 
 /* Change color on hover */
 .github-link:hover {
-  color: #4078c0; /* GitHub's primary color */
+  color: #c6c6c6; /* GitHub's primary color */
 }
 
 /* Optional: add some spacing to the left of the icon */
