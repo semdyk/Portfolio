@@ -47,3 +47,28 @@ p {
   font-size: 1.2em;
   line-height: 1.5;
 }
+
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center the content */
+  }
+
+  .content {
+    max-width: 100%; /* Full width on mobile */
+    text-align: center; /* Center text on mobile */
+    padding-left: 0; /* Remove left padding */
+    padding-bottom: 20px; /* Add space between content and gallery */
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
+    gap: 10px;
+    padding: 0 20px; /* Add horizontal padding */
+  }
+
+  .gallery img {
+    width: 100%; /* Make images take up the full width of their container */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
