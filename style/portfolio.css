@@ -1,26 +1,26 @@
 .dashboard {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   width: 100%;
   padding: 20px;
-  border-radius: 12px; /* Rounded corners for cleaner design */
-  background-color: #1f1f1f; /* Match background to image */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Add subtle shadow */
-  flex-direction: row; /* Ensure items are in a row */
+  border-radius: 12px;
+  background-color: #1f1f1f;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  flex-direction: row;
 }
 
 .content {
   flex: 1;
-  max-width: 45%; /* Adjust width for better space usage */
-  text-align: center; /* Center text */
-  padding-left: 20px; /* Adjust padding as needed */
+  max-width: 45%;
+  text-align: center;
+  padding-left: 20px;
 }
 
 .gallery-container {
-  max-width: 45%; /* Adjust width to align with content */
-  text-align: center; /* Center gallery images */
+  max-width: 45%;
+  text-align: center;
 }
 
 .gallery {
@@ -31,11 +31,11 @@
 
 .gallery img {
   width: 250px;
-  display: none; /* Hide all images initially */
+  display: none;
 }
 
 .gallery img.active {
-  display: block; /* Show only the active image */
+  display: block;
 }
 
 .arrow {
