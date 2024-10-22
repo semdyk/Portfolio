@@ -85,3 +85,46 @@
 .modal.show {
   display: flex;
 }
+
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .content,
+  .gallery-container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+
+  .arrow {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .dashboard {
+    gap: 10px;
+  }
+
+  .content h1 {
+    font-size: 24px;
+  }
+
+  .content p {
+    font-size: 16px;
+  }
+
+  .gallery img {
+    width: 100%;
+  }
+
+  .arrow {
+    font-size: 1.2rem;
+  }
+}

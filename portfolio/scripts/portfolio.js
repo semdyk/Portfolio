@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function () {
     updateGallery();
   });
 
-  // Zoom in functionality
   images.forEach((img) => {
     img.addEventListener("click", function () {
       const modal = document.getElementById("image-modal");
@@ -31,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Close modal on click
   const modal = document.getElementById("image-modal");
   modal.addEventListener("click", function () {
     modal.classList.remove("show");
