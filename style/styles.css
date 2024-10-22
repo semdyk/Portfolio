@@ -135,7 +135,13 @@ nav ul li a.active {
   margin-bottom: 20px;
 }
 
-.skill-icons,
+.skill-icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-items: center;
+}
+
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
