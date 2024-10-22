@@ -70,11 +70,6 @@ nav ul li a.active {
   color: #c6c6c6; /* GitHub's primary color */
 }
 
-/* Optional: add some spacing to the left of the icon */
-.github-link i {
-  margin-left: 10px;
-}
-
 .section {
   height: auto;
   min-height: 100vh;
