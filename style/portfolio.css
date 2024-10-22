@@ -19,7 +19,6 @@
 }
 
 .gallery-container {
-  flex: 1;
   max-width: 45%; /* Adjust width to align with content */
   text-align: center; /* Center gallery images */
 }
