@@ -28,7 +28,7 @@
 
 .gallery img {
   width: 200px;
-  height: auto; /* Adjusted height for better aspect ratio */
+  height: 300px; /* Adjusted height for better aspect ratio */
   object-fit: cover;
   border-radius: 12px; /* Match the card border styling */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for image depth */
