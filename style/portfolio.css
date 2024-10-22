@@ -34,8 +34,7 @@ body {
 }
 
 .gallery img {
-  width: 350px;
-  height: 150px;
+  width: 250px;
   display: none;
 }
 
