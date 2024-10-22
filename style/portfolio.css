@@ -17,59 +17,66 @@
   padding-left: 40px; /* Ensure content aligns with left margin */
 }
 
+.gallery-container {
+  position: relative;
+  max-width: 100%; /* Adjust based on your page layout */
+}
+
 .gallery {
-  flex: 1;
-  display: grid;
-  max-height: 280px;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 10px;
-  padding-right: 20px; /* Padding to space images from right edge */
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .gallery img {
-  width: 200px;
-  height: 300px; /* Adjusted height for better aspect ratio */
-  object-fit: cover;
-  border-radius: 12px; /* Match the card border styling */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for image depth */
+  width: 100%;
+  display: none; /* Hide all images initially */
 }
 
-h1,
-p {
-  color: #ffffff; /* Ensure text is visible */
+.gallery img.active {
+  display: block; /* Show only the active image */
 }
 
-h1 {
-  font-size: 2.5em; /* Emphasize title */
-  font-weight: 900;
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  z-index: 1;
 }
 
-p {
-  font-size: 1.2em;
-  line-height: 1.5;
+.arrow.left {
+  left: 10px;
 }
 
-@media (max-width: 768px) {
-  .dashboard {
-    flex-direction: column; /* Stack content vertically */
-    align-items: center; /* Center the content */
-  }
+.arrow.right {
+  right: 10px;
+}
 
-  .content {
-    max-width: 100%; /* Full width on mobile */
-    text-align: center; /* Center text on mobile */
-    padding-left: 0; /* Remove left padding */
-    padding-bottom: 20px; /* Add space between content and gallery */
-  }
+.gallery img.zoom {
+  cursor: zoom-in;
+}
 
-  .gallery {
-    grid-template-columns: repeat(2, 1fr); /* Adjust for smaller screens */
-    gap: 10px;
-    padding: 0 20px; /* Add horizontal padding */
-  }
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
 
-  .gallery img {
-    width: 100%; /* Make images take up the full width of their container */
-    height: auto; /* Maintain aspect ratio */
-  }
+.modal img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal.show {
+  display: flex;
 }
