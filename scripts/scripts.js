@@ -4,6 +4,9 @@ const navItems = document.querySelectorAll(".navitem");
 const profilePicture = document.getElementById("profile-picture");
 const navPicture = document.getElementById("logo");
 
+// Initialize the isExpanded flag
+let isExpanded = false; // This can be updated later if needed
+
 function scrollToSection(index) {
   if (index >= 0 && index < sections.length) {
     sections[index].scrollIntoView({ behavior: "smooth" });
