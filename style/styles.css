@@ -1,348 +1,378 @@
 body {
-    margin: 0;
-    font-family: "Inter", sans-serif;
-    background-color: #1e1e1e;
-    color: #fff;
-    overflow-x: hidden;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+  overflow-x: hidden;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    width: 95%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
 }
 
 .logo {
-    height: 80px;
-    width: 80px;
-    cursor: pointer;
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap; 
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #d8d8d8;
-    font-size: 20px;
+  text-decoration: none;
+  color: #d8d8d8;
+  font-size: 20px;
 }
 
 nav ul li a.active {
-    font-weight: bold;
-    color: #ffffff;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .toggle-theme {
-    cursor: pointer;
-    font-size: 24px;
-    margin-left: 20px;
+  cursor: pointer;
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.github-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 24px; /* Adjust size of the icon */
+  color: #333; /* Default color of the icon */
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Change color on hover */
+.github-link:hover {
+  color: #4078c0; /* GitHub's primary color */
+}
+
+/* Optional: add some spacing to the left of the icon */
+.github-link i {
+  margin-left: 10px;
 }
 
 .section {
-    height: auto;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 20px;
+  height: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
 }
 
 .about {
-    background: linear-gradient(135deg, #333333 0%, #1b1b1b 100%);
+  background: linear-gradient(135deg, #333333 0%, #1b1b1b 100%);
 }
 
 .skills {
-    background: linear-gradient(135deg, #1e1e1e 0%, #333 100%);
+  background: linear-gradient(135deg, #1e1e1e 0%, #333 100%);
 }
 
 .portfolio {
-    background: linear-gradient(135deg, #333 0%, #1e1e1e 100%);
+  background: linear-gradient(135deg, #333 0%, #1e1e1e 100%);
 }
 
 .content {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .profile-pic img {
-    border-radius: 50%;
-    width: 250px; 
-    height: 250px;
-    border: 2px solid #fff;
-    margin: 20px 0;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  border: 2px solid #fff;
+  margin: 20px 0;
 }
 
 .intro h1 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 .intro h1 span {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .intro h1 span {
-    font-weight: 900;
-    color: #ffffff;
-    font-size: 56px;
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 56px;
 }
 
 .intro p {
-    margin-top: -20px;
-    font-size: 20px;
-    font-weight: 300;
+  margin-top: -20px;
+  font-size: 20px;
+  font-weight: 300;
 }
 
-.skills h2, .portfolio h2 {
-    text-align: center;
-    margin-bottom: 20px;
+.skills h2,
+.portfolio h2 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.skill-icons, .projects {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-    justify-items: center;
+.skill-icons,
+.projects {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-items: center;
 }
 
-.skill, .project {
-    background-color: #444;
-    padding: 40px;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    border-radius: 10px;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.skill,
+.project {
+  background-color: #444;
+  padding: 40px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.skill img, .project img {
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    margin-bottom: 5px;
+.skill img,
+.project img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  margin-bottom: 5px;
 }
 
-.skill p, .project p {
-    font-size: 16px;
+.skill p,
+.project p {
+  font-size: 16px;
 }
 
-.skill:hover, .project:hover {
-    background-color: #333;
+.skill:hover,
+.project:hover {
+  background-color: #333;
 }
 
 .skills .content {
-    justify-content: center;
+  justify-content: center;
 }
 
 .portfolio .content {
-    justify-content: center; 
+  justify-content: center;
 }
 
 .section.about .content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    min-height: 100vh; 
-    width: 100%; 
-    padding: 20px; 
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .login-form {
-    width: 100%; 
-    max-width: 400px; 
-    padding: 20px;
-    border-radius: 10px;
-    background-color: #242424; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #242424;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .section.about h2 {
-    margin-bottom: 20px;
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .login-form .input-group {
-    position: relative; 
-    width: 100%;
-    margin-bottom: 15px;
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
 }
 
 .login-form .input-group input {
-    width: 100%;
-    padding: 12px 0px 12px 0px;
-    border-radius: 6px; 
-    border: none;
-    background-color: #2a2a2a; 
-    color: #fff;
-    font-size: 16px;
-    outline: none; 
+  width: 100%;
+  padding: 12px 0px 12px 0px;
+  border-radius: 6px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
 }
 
-
 .login-form .input-group input::placeholder {
-    color: #aaa; 
+  color: #aaa;
 }
 
 .login-form .input-group i {
-    position: absolute;
-    right: 10px; 
-    top: 50%; 
-    transform: translateY(-50%);
-    color: #aaa;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
 }
 
-
 button[type="submit"] {
-    width: 100%; 
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    display: block; 
-    margin: 0; 
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 0;
 }
 
 button[type="submit"]:hover {
-    background-color: #1e1e1e;
+  background-color: #1e1e1e;
 }
 
-
 .other-button {
-    width: 80px; 
-    border-radius: 5px;
-    background-color: #333;
-    text-align: center;
-    color: #fff;
-    padding: 10px;
-    font-size: 14px; 
-    font-weight: bold; 
-    cursor: pointer;
+  width: 80px;
+  border-radius: 5px;
+  background-color: #333;
+  text-align: center;
+  color: #fff;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 @media (max-width: 1200px) {
-    .skill-icons, .projects {
-        grid-template-columns: repeat(3, 1fr); 
-    }
+  .skill-icons,
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 900px) {
-    .skill-icons, .projects {
-        grid-template-columns: repeat(2, 1fr); 
-    }
+  .skill-icons,
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .skill img, .project img {
-        width: 35px;
-        height: 35px;
-        margin-bottom: 5px;
-    }
+  .skill img,
+  .project img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+  }
 
-    .skill p, .project p {
-        font-size: 14px;
-    }
+  .skill p,
+  .project p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 600px) {
-    .skill-icons, .projects {
-        grid-template-columns: 1fr;
-    }
+  .skill-icons,
+  .projects {
+    grid-template-columns: 1fr;
+  }
 
-    .skill img, .project img {
-        width: 35px;
-        height: 35px;
-        margin-bottom: 5px;
-    }
+  .skill img,
+  .project img {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 5px;
+  }
 
-    .skill p, .project p {
-        font-size: 13px;
-    }
+  .skill p,
+  .project p {
+    font-size: 13px;
+  }
 }
 
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 10px;
-    }
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
 
-    nav ul {
-        gap: 10px;
-    }
+  nav ul {
+    gap: 10px;
+  }
 
-    .intro h1 {
-        font-size: 28px;
-    }
+  .intro h1 {
+    font-size: 28px;
+  }
 
-    .intro p {
-        font-size: 18px;
-    }
+  .intro p {
+    font-size: 18px;
+  }
 
-    .skill-icons, .projects {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .skill-icons,
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .project.expanded {
-        width: 90vw;
-        height: 75vh;
-    }
+  .project.expanded {
+    width: 90vw;
+    height: 75vh;
+  }
 }
 
 @media (max-width: 480px) {
-    .logo {
-        height: 60px;
-        width: 60px;
-    }
+  .logo {
+    height: 60px;
+    width: 60px;
+  }
 
-    nav ul li a {
-        font-size: 16px;
-    }
+  nav ul li a {
+    font-size: 16px;
+  }
 
-    .intro h1 {
-        font-size: 24px;
-    }
+  .intro h1 {
+    font-size: 24px;
+  }
 
-    .intro p {
-        font-size: 16px;
-    }
+  .intro p {
+    font-size: 16px;
+  }
 
-    .skill, .project {
-        max-width: 140px;
-        padding: 15px;
-        height: 100px;
-    }
-
+  .skill,
+  .project {
+    max-width: 140px;
+    padding: 15px;
+    height: 100px;
+  }
 }
