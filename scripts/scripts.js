@@ -74,5 +74,5 @@ navPicture.addEventListener("click", () => {
 });
 
 function sendToPortfolio(name) {
-  window.location.href = "portfolio/" + name + ".html";
+  window.location.href = "portfolio/" + name;
 }
