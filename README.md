@@ -1,34 +1,35 @@
-# 🔒 PHP OOP Login System
+# 🌐 Personal Portfolio - semdyk.xyz
 
-**PHP-OOP-Login** is a secure, object-oriented login system built in PHP without a database, ideal for educational purposes and lightweight authentication scenarios.
+This is a portfolio website showcasing my skills, projects, and experience in software development, designed to provide a quick and interactive overview of my work.
 
 ## ✨ Features
 
-- **Object-Oriented Structure**: Built with modular classes, making the code easy to understand and extend.
-- **Secure Login**: Uses PHP’s hashing functions for password security.
-- **Session Management**: Implements session-based user authentication without a database.
+- **Project Showcase**: A detailed section presenting key projects, each with descriptions, technologies used, and GitHub links.
+- **Skills Overview**: A clear layout displaying technical skills and areas of expertise.
+- **Responsive Design**: Optimized for both desktop and mobile viewing.
+- **Contact Section**: Easily accessible contact options for professional connections.
 
 ## 🗂️ File Structure
 
-- **classes** – Core PHP classes for authentication and session management.
-- **index.php** – Main entry point with login form and session handling.
-- **login.php** – Handles user login requests.
-- **logout.php** – Destroys session for user logout.
+- **assets** – Images, icons, and other resources for styling.
+- **css** – Stylesheets to define the look and feel.
+- **js** – JavaScript files for dynamic effects and interactivity.
+- **index.html** – Main page of the portfolio.
+- **projects.html** – Dedicated page for project details (if applicable).
 
 ## 🚀 Getting Started
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/PHP-OOP-Login.git
+   git clone https://github.com/yourusername/Portfolio.git
    ```
-2. Open the project in a PHP-supported server.
-3. Access `index.php` to use the login system.
+2. Open `index.html` in a browser to view the portfolio.
 
 ## 🛠️ Technologies Used
 
-- **PHP**: Core backend logic.
-- **HTML/CSS**: Basic styling and structure for the login interface.
+- **HTML/CSS**: Structure and styling.
+- **JavaScript**: Interactivity and animations.
 
 ## 📄 License
 
-This project is for educational purposes. Feel free to explore and modify the code!
+Feel free to explore, modify, or use the code to build your own portfolio!
